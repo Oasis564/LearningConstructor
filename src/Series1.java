@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 
-public class App {
+public class Series1 {
 
     public static int Factorial(int k){
         if(k <= 1){
@@ -23,8 +23,6 @@ public class App {
         // series 3: 1!/x^k + 2!/x^k + 3!/x^k . . . n!/x^k. takes three inputs.
         Scanner s = new Scanner(System.in);
         int sum = 0;
-        int sum2 = 0;
-        int sum3 = 0;
         System.out.println("Enter the series 1 number");
         int n = s.nextInt();
         for (int i = 1; i < n; i++) {
@@ -34,15 +32,5 @@ public class App {
         }
         System.out.println(sum);
 
-        System.out.println("Enter the series 2 number");
-        n = s.nextInt();
-        for (int i = 1; i < n; i++) {
-            int fact = Factorial(i);
-            int pow = Math.pow(2, 3);
-            System.out.println("The series 2 factorial of "+i+" is "+fact+".");
-            sum2 = sum+fact;
-        }
-
-        System.out.println(sum2);
     }
 }
